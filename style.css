@@ -1,0 +1,56 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body,html{
+    width: 100%;
+}
+body{
+    min-height:100vh;
+    margin:0;
+}
+
+.commandList{
+    width:100%;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding:1rem;
+}
+
+.commandList__command{
+    width:100%;
+    padding:.5rem 1rem;
+    border-radius: 10px;
+    background-color: purple;
+    overflow:hidden;
+}
+
+.commandList__command__name{   
+    display:inline-block;
+}
+
+.commandList__command__description,.commandlist__command__vars__var__description{
+    width:100%;
+    color:white;
+    margin-left:3vw;
+}
+.commandList__command__vars{
+    display:none;
+}
+.commandList__command--opened > .commandList__command__vars{
+    display:block;
+}
+.commandList__command__expandBtn--opened{
+    transform:rotate(180deg);
+}
+.commandList__command__expandBtn{
+    width:1.5rem;
+    display:inline-block;
+    filter:invert(1);
+    transition: transform .3s;
+}

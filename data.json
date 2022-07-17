@@ -1,0 +1,51 @@
+{
+    "commands":[
+                {
+                    "name":"pwd(print work directory)",
+                    "description":"imprime en la terminal el directorio acutal"
+                },
+                {
+                    "name":"help",
+                    "vars":[
+                            {
+                                "name":"help",
+                                "description":"escribe en la terminal una lista con todos los comandos"
+                            },
+                            {
+                                "name":"help (comando)",
+                                "description":"escribe en la terminal una ayuda para el comando específicado"
+                            },
+                            {
+                                "name":"(comando) --help",
+                                "description":"hace lo mismo que help(comando)"
+                            },
+                            {
+                                "name":"(comando) -help",
+                                "description":"hace lo mismo que help(comando) y (comando) —help"
+                            }
+                            
+                    ]
+                },
+                {
+                    "name":"whoami(Who am I)",
+                    "description":"escribe en la terminal el nombre del usuario actual"
+                },
+                {
+                    "name":"clear(limpiar)", 
+                    "description":"limpia la terminal"
+                },
+
+                {
+                    "name":"teclado (flecha hacia arriba",
+                    "description":"retrocede 1 posición en el historial de comandos ( solo guarda los últimos 20 comandos)"
+                },
+                {   
+                    "name":"teclado (flecha hacia abajo)",
+                    "description":"abanza 1 posición en el historial de comandos (solo guarda los últimos 20 comandos)"
+                },
+                {
+                    "name":"ls",
+                    "description":"lista (imprime en la terminal) los archivos de el directorio actual ,por defecto de forma alfabética si no se especifica otro orden; multiples opciones adicionales están disponibles para esta función, para verlas ejecutar en una terminal ls --help"
+                }
+    ]
+}
